@@ -1,0 +1,107 @@
+﻿@page "/manajemendata/tambah"
+@page "/manajemendata/edit/{id:int}"
+@inject IProdukService ProdukService
+
+
+@if(Id==null)
+{
+	<PageTitle>Tambah Produk Baru</PageTitle>
+	<h3>Tambah Produk Baru</h3>
+}
+else
+{
+	<PageTitle>Edit Data @prod.NamaProduk</PageTitle>
+	<h3>Edit Produk @prod.NamaProduk</h3>
+}
+<EditForm Model="prod" OnValidSubmit="HandleSubmit">
+	<div class="form-group row">
+		<label for="NamaProduk" class="col-sm-2 col-form-label">Nama</label>
+		<InputText id="NamaProduk" @bind-Value="@prod.NamaProduk" class="form-control"></InputText>
+	</div>
+	<div class="form-group row">
+		<label for="DeskripsiProduk" class="col-sm-2 col-form-label">Deskripsi</label>
+		<InputText id="DeskripsiProduk" @bind-Value="@prod.DeskripsiProduk" class="form-control"></InputText>
+	</div>
+	<div class="form-group row">
+		<label for="Gambar" class="col-sm-2 col-form-label">Gambar</label>
+		<InputText id="NamaProduk" @bind-Value="@prod.GambarProduk" class="form-control"></InputText>
+	</div>
+	<div class="form-group row">
+		<label for="HargaProduk" class="col-sm-2 col-form-label">Harga</label>
+		<InputNumber id="HargaProduk" @bind-Value="@prod.HargaProduk" class="form-control"></InputNumber>
+	</div>	
+	<div class="form-group row">
+		<label for="HargaOriginalProduk" class="col-sm-2 col-form-label">Harga Original</label>
+		<InputNumber id="HargaOriginalProduk" @bind-Value="@prod.HargaOriginalProduk" class="form-control"></InputNumber>
+	</div>
+	<div class="form-group row">
+		<label for="IsPublic" class="col-sm-2 col-form-label">Publik?</label>
+		<InputRadioGroup id="IsPublic" @bind-Value="@prod.IsPublic" class="form-check">
+			<InputRadio Value="@true" class="form-check-input" />Ya
+			<InputRadio Value="@true" class="form-check-input" />Tidak
+		</InputRadioGroup>
+	</div>
+	<div class="form-group row">
+		<label for="Is" class="col-sm-2 col-form-label">Delete?</label>
+		<InputRadioGroup id="IsDelete" @bind-Value="@prod.IsDelete" class="form-check">
+			<InputRadio Value="@true" class="form-check-input" />Ya
+			<InputRadio Value="@true" class="form-check-input" />Tidak
+		</InputRadioGroup>
+	</div>
+	<div class="form-group row">
+		<label for="DateCreated" class="col-sm-2 col-form-label">
+			DateCreated: 
+		</label>
+		<InputDate id="DateCreated" @bind-Value="prod.DateCreated"></InputDate>
+	</div>
+	<div class="form-group row">
+		<label for="DateUpdated" class="col-sm-2 col-form-label">
+			DateUpdated:
+		</label>
+		<InputDate id="UpdatedCreated" @bind-Value="prod.DateUpdated"></InputDate>
+	</div>
+		<div class="form-group row">
+		<label for="IdKategori" class="col-sm-2 col-form-label">Id Kategori</label>
+		<InputNumber id="IdKategori" @bind-Value="@prod.IdKategori" class="form-control"></InputNumber>
+	</div>
+	<br /><br />
+	<div class="form-group row">
+		<button type="submit" class="btn btn-primary form-control">@btnTxt</button>
+		<button type="button" class="btn btn-danger form-control" @onclick="HapusProduk">Hapus</button>
+	</div>
+</EditForm>
+
+@code {
+	[Parameter]
+	public int? Id { get; set; }
+	string btnTxt = string.Empty;
+	Produk prod = new Produk();
+
+	protected override async Task OnInitializedAsync()
+	{
+		btnTxt = Id == null? "Tambah Produk Baru" : "Ubah Produk";
+	}
+	protected override async Task OnParametersSetAsync()
+	{
+		if(Id !=null)
+		{
+			prod = await ProdukService.GetProdukById((int)Id);
+		}
+	}
+
+	public async void HandleSubmit()
+	{
+		if(Id==null)
+		{
+			await ProdukService.CreateProduk(prod);
+		}
+		else
+		{
+			await ProdukService.UpdateProduk(prod);
+		}
+	}
+	async Task HapusProduk()
+	{
+		await ProdukService.DeleteProduk(prod.IdProduk);
+	}
+}

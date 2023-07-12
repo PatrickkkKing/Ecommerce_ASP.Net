@@ -1,0 +1,57 @@
+﻿@page "/manajemendata"
+
+@inject IProdukService ProdukService
+@inject NavigationManager NavigationManager
+
+<h3>Manajemen Data Produk</h3>
+<div>
+	<button class="btn btn-success" @onclick="TambahProduk">Tambah Produk</button>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Gambar</th>
+			<th>Nama Produk</th>
+			<th>Harga</th>
+			<th>Kategori</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var prod in ProdukService.Produks)
+		{
+			<tr>
+				<td><img height="100" width="100" src="@prod.GambarProduk" alt=""/></td>
+				<td>@prod.NamaProduk</td>
+				<td>@prod.HargaProduk</td>
+				<td>@prod.IdKategori</td>
+				<td>
+					<button class="btn btn-primary" @onclick="(() => ShowProduk(prod.IdProduk))">
+						<i class="oi oi-pencil"></i>
+					</button>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@code {
+	protected override async Task OnInitializedAsync()
+	{
+		await ProdukService.GetAllProduk();
+	}
+
+	void ShowProduk(int id)
+	{
+		NavigationManager.NavigateTo($"manajemendata/edit/{id}");
+	}
+
+	void TambahProduk()
+	{
+		NavigationManager.NavigateTo("manajemendata/tambah");
+	}
+}
+
+	
+

@@ -1,0 +1,12 @@
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\bin\Debug\net6.0\Ecomm_2012500811.Shared.deps.json
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\bin\Debug\net6.0\Ecomm_2012500811.Shared.dll
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\bin\Debug\net6.0\Ecomm_2012500811.Shared.pdb
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.csproj.AssemblyReference.cache
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.AssemblyInfoInputs.cache
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.AssemblyInfo.cs
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.csproj.CoreCompileInputs.cache
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.dll
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\refint\Ecomm_2012500811.Shared.dll
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\Ecomm_2012500811.Shared.pdb
+D:\UINSU\JOKI\JAMILAH HASNAH\vsnew\Ecomm_2012500811\Ecomm_2012500811\Shared\obj\Debug\net6.0\ref\Ecomm_2012500811.Shared.dll

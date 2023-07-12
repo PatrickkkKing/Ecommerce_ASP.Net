@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Server\\Ecomm_2012500811.Server.csproj": {}
+  },
+  "projects": {
+    "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\Ecomm_2012500811.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\Ecomm_2012500811.Client.csproj",
+        "projectName": "Ecomm_2012500811.Client",
+        "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\Ecomm_2012500811.Client.csproj",
+        "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
+        "outputPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj": {
+                "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Server\\Ecomm_2012500811.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Server\\Ecomm_2012500811.Server.csproj",
+        "projectName": "Ecomm_2012500811.Server",
+        "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Server\\Ecomm_2012500811.Server.csproj",
+        "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
+        "outputPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\Ecomm_2012500811.Client.csproj": {
+                "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Client\\Ecomm_2012500811.Client.csproj"
+              },
+              "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj": {
+                "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj",
+        "projectName": "Ecomm_2012500811.Shared",
+        "projectPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\Ecomm_2012500811.Shared.csproj",
+        "packagesPath": "C:\\Users\\win10\\.nuget\\packages\\",
+        "outputPath": "D:\\UINSU\\JOKI\\JAMILAH HASNAH\\vsnew\\Ecomm_2012500811\\Ecomm_2012500811\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\win10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
